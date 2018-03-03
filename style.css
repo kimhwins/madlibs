@@ -1,0 +1,173 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	position: relative;
+	display: block;
+	background: url("images/header.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center right;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.header-image {
+	display: block;
+	margin: auto;
+	width: 70%;
+	padding-top: 21vh;
+}
+
+.button-div {
+	text-align: center;	
+	padding-top: 3%;
+	padding-bottom: 5%;
+}
+
+.button {
+	background: #9e7dd1;
+	border-radius: 150px;
+	color: white;
+	padding: 0.75% 3.5%;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.6vw;
+	letter-spacing: 2px;
+	transform: scaleY(0.75);
+}
+
+section {
+	background: #b798e3;
+	width: 100%;
+	padding: 5% 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	background: #7b8afc;
+}
+
+.row{
+	width: 100%;
+	margin:auto; 
+	display: flex;
+}
+
+.word-forms {
+	background: white;
+	border-radius: 50px;
+	margin: 0 15%;
+}
+
+form {
+	padding: 7.5% 9%;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 1.25vw;
+	letter-spacing: 1px;
+	color: #7f57bd;
+}
+
+input[type=text] {
+	width: 100%;
+	margin: 1.5% 0 3% 0;
+	padding: 1.5% 2%;
+	float: left;
+    width: 65%;
+}
+
+input[type=submit] {
+	display: block;
+	background: #9e7dd1;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.6vw;
+	letter-spacing: 2px;
+	border-radius: 150px;
+	padding: 0.75% 4%;
+	border: none;
+	transform: scaleY(0.95);
+	cursor: pointer;
+	margin: auto;
+/*	margin-top: 5%;*/
+}
+
+input[type=submit]:hover {
+	background: #889bfe;
+}
+
+.col-35 {
+/*	display: inline-block;
+    float: left;
+    width: 35%;
+    padding: 3vh 0;*/
+    width: 40%;
+    margin:auto; 
+	display: flex;
+}
+
+.col-65 {
+/*    float: left;
+    width: 65%;*/
+    width: 60%;
+    margin:auto; 
+	display: flex;
+}
+
+.submit {
+	clear:both;
+	padding-top: 5%;
+}
+
+@media only screen and (max-width: 850px) {
+
+	.button {
+		margin-top: 5%;
+		font-size: 3vw;
+	}
+
+	.word-forms {
+		margin: 0 7.5%;
+	}
+
+	.row{
+		flex-flow: row wrap;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	.col-35 {
+	    width: 100%;
+	    display: flex;
+	}
+
+    input[type=text] {
+	    width: 100%;
+	    margin-bottom: 5%;
+	}
+
+	form {
+		font-size: 2.5vw;
+		padding: 9% 11.5%;
+	}
+
+	input[type=submit] {
+		font-size: 3vw;
+	}
+}
+
